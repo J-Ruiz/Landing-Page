@@ -2,19 +2,49 @@
 .outer-flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 600px;
 }
 
 .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.header-top{
+    display: flex;
+    gap:20px;
+}
+
+.header-middle{
+    display: flex;
+    gap: 200px;
+}
+
+.header-middle-left{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.header-middle-right{
+    display:flex;
+    flex-direction: row;
+    
 }
 
 .content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     flex: 2;
     background-color: lightgray;
+    height: 100%;
+    width: 100%;
+    
 }
