@@ -63,9 +63,24 @@
 
 .content-middle{
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     background-color: beige;
     width: 100%;
     padding: 60px;
+}
+
+.content-bottom{
+    display: flex;
+    gap: 200px;
+    padding: 40px;
+}
+
+
+.content-bottom-right{
+    margin-top: 30px;
+}
+
+.footer{
+    text-align: center;
 }
