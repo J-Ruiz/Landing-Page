@@ -40,11 +40,32 @@
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     flex: 2;
     background-color: lightgray;
     height: 100%;
     width: 100%;
+}
+
+.content-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
+}
+
+.content-top-photos{
+    display: flex;
+    gap: 200px;
+    padding:60px;
+   
+}
+
+.content-middle{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    width: 100%;
+    padding: 60px;
 }
