@@ -1,3 +1,10 @@
+/*dont set width and height if you dont want it to be a fixed size
+
+max-width: 100% so the image does not scale beyond its native resolution, i.e. become pixelated. This can be changed to width: 100% if you like pixelated images.
+height: auto so the image ration is preserved.
+
+
+*/
 
 .outer-flex-container {
     display: flex;
@@ -9,20 +16,23 @@
     flex-direction: column;
     background-color: #1F2937;
     flex: 1;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
+    
 }
 
 .header-middle-left button{
-    width: 70px;
-    
+    width: 6vw;
+   
 }
 
 .header-top{
     display: flex;
     color: #F9FAF8;
     font-weight: bold;
-    gap:20px;
+    gap:2vw;
+    padding-left:2vw;
+    
 }
 
 .push-right{
@@ -33,42 +43,43 @@
     display: flex;
     justify-content: space-around;
     color: #F9FAf8;  
-    
+    margin-bottom: 3vw;
+    max-width: 100%;
+    height:auto;
 }
 
 
 .header-middle-left{
     display: flex;
     flex-direction: column;
+    max-width:100%;
+    height:auto;
     
 }
 
 .header-middle-left h1{
     font-size: 48px;
+    max-width:100%;
+    height: auto;
 }
 
-.header-middle-right{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 40px;
+.header-middle-right img{
+   max-width:100%;
+   height:auto;
+
 }
-
-
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 2;
     margin-top: 30px;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
     color: #1F2937;
 }
 
 .content-top{
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -90,7 +101,8 @@
     border: 5px;
     border-color: black;
     border-style: solid;
-    width: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 .content-middle{
@@ -98,18 +110,19 @@
     flex-direction: column;
     align-items: flex-end;
     background-color: #E5E7EB;
-    width: 100%;
-    padding: 60px;
+    max-width: 100%;
+    height: auto;
+    padding: 4vw 12vw;
 }
 
 .content-bottom{
     display: flex;
-    gap: 200px;
-    padding: 20px 100px;
+    gap: 10vw;
+    padding: 2vw 4vw;
     color: #F9FAF8;
     font-weight: bold;
     background-color: #3882F6;
-    margin: 50px;
+    margin: 3vw;
 }
 
 
@@ -118,8 +131,8 @@
     color: #F9FAF8;
     border-color: #F9FAF8;
     font-weight: bold;
-    padding: 5px 20px;
-    margin-top: 30px;
+    padding: .3vw 1vw ;
+    margin-top: 2vw;
 }
 
 .footer{
